@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>University Website Design - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8c33905f54.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" width="100"></a>
+            <div class="nav-links" id="navLinks">
+                <!-- <i class="fa fa-times" onclick="hideMenu"()></i> -->
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i id="hamburger" class=" fa-solid fa-bars fa-2xl" style="color: white;" onclick="showMenu" ()></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+    <!---------------contact us --------------->
+
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121059.03447396975!2d73.86296739999999!3d18.52461645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1715671105941!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>
+
+
+    <section class="contact-us">
+
+        <div class="row">
+            <div class="contact-col">
+                <i class="fa-solid fa-house" style="color: #000000;"></i>
+                <span>
+                    <h5>XYZ Road, ABC Building</h5>
+                    <p>Pune,Maharashtra, IN</p>
+                </span>
+                <div>
+                    <i class="fa-solid fa-phone" style="color: #000000;"></i>
+                    <span>
+                        <h5>+91 7903085789</h5>
+                        <p>Monday to Saturday, 10AM to 6PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope" style="color: #000000;"></i>
+                    <span>
+                        <h5>info@easytutorials.com</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+
+                <form action="">
+                    <input type="text" placeholder="Enter your name required">
+                    <input type="email" placeholder="Enter email Address required">
+                    <input type="text" placeholder="Enter your subject required">
+                    <textarea rows="8" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+    <!-------------------JavaScript for Toggle Menu------------------>
+<script>
+    let bgr  = document.querySelector("#hamburger");
+    let menu  = document.querySelector(".nav-links");
+    
+    bgr.addEventListener("click" , ()=>{
+        menu.classList.toggle("menu")
+        // let f=0;
+        // if(f==0){
+        //     menu.classList.add("menu");
+        //     f = 1;
+        // }else{
+        //     menu.classList.remove("menu")
+        //     f=0;
+        // }
+    })
+</script>
+
+
+
+    <!----------Course---------->
+
+
+
+
+    <!---------------campus------------------>
+
+
+
+    <!----------------Facilities  ------------>
+
+
+
+    <!-----------Call To Action------------>
+
+
+
+    <!-----------Footer------------>
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quas impedit accusantium facere deleniti
+            nulla, <br>consectetur repudiandae incidunt, ratione consequatur doloremque ab accusamus.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-instagram"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by vivek</p>
+
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>University Website Design - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8c33905f54.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html" ><img src="images/logo.png" width="100"></a>
+            <div class="nav-links" id="navLinks">
+                <!-- <i class="fa fa-times" onclick="hideMenu"()></i> -->
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i id="hamburger" class=" fa-solid fa-bars fa-2xl" style="color: white;" onclick="showMenu"()></i>
+        </nav>
+            <h1>Our Certificate & Online Program For 2024</h1>
+    </section>
+    <!-----------blog page content---------->
+
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/certificate.jpg">
+                <h2>Our Certificate & Online Program For 2024</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, culpa repellendus optio sequi, nihil nostrum, deleniti atque tenetur a iusto labore similique quas. Magnam nulla, modi a veritatis deleniti impedit.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, repudiandae magni temporibus voluptatum sunt dolorem autem ducimus. Provident recusandae debitis similique numquam excepturi illum, soluta laborum temporibus dolorum quod adipisci?</p>
+                <br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore nulla, repellendus, est neque doloribus aliquid magni aperiam esse nostrum eius, voluptates harum! Laudantium corrupti ipsa et beatae voluptatum neque perferendis?</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quae explicabo modi sequi et. Iste natus temporibus ratione hic maxime eum amet repellendus, quas officia iusto explicabo sequi veniam quia.</p>
+
+                <div class="comment-box">
+
+                    <h3>Leave a comment</h3>
+                    <form class="comment-form">
+                    <input type="text" placeholder="Enter Name">
+                    <input type="email" placeholder="Enter Email">
+                    <textarea rows="5" placeholder="Your comment"></textarea>
+                    <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                    </form>
+                </div>
+
+
+            </div>
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Bussiness Analytics</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Data Science</span>
+                    <span>24</span>
+                </div>
+                <div>
+                    <span>English</span>
+                    <span>22</span>
+                </div>
+                <div>
+                    <span>Data Analytics</span>
+                    <span>26</span>
+                </div>
+                <div>
+                    <span>Computer Science</span>
+                    <span>28</span>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-------------------JavaScript for Toggle Menu------------------>
+<script>
+    let bgr  = document.querySelector("#hamburger");
+    let menu  = document.querySelector(".nav-links");
+    
+    bgr.addEventListener("click" , ()=>{
+        menu.classList.toggle("menu")
+        // let f=0;
+        // if(f==0){
+        //     menu.classList.add("menu");
+        //     f = 1;
+        // }else{
+        //     menu.classList.remove("menu")
+        //     f=0;
+        // }
+    })
+</script>
+    
+    
+        
+
+
+<!-----------Footer------------>
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quas impedit accusantium facere deleniti nulla, <br>consectetur repudiandae incidunt, ratione consequatur doloremque ab accusamus.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-instagram"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by vivek</p>
+
+</section>
+    
+
+
+
+
+    
+
+    
+
+    
+
+</body>
+
+</html>

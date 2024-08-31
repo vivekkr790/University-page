@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>University Website Design - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8c33905f54.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html" ><img src="images/logo.png" width="100"></a>
+            <div class="nav-links mobilenav" id="navLinks">
+                <!-- <i class="fa fa-times" onclick="hideMenu"()></i> -->
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i id="hamburger" class=" fa-solid fa-bars fa-2xl" style="color: white;" onclick="showMenu"()></i>
+        </nav>
+            <h1>About Us</h1>
+    </section>
+
+    <!---------------about us content--------------->
+    
+    <section class="about-us">
+
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the world's largest University</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod est voluptatibus accusamus at saepe delectus maiores officiis, accusantium eaque assumenda fugit quia mollitia nulla ipsum error cum ab velit voluptatem?</p>
+                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="images/about.jpg">
+            </div>
+        </div>
+
+
+    </section>
+        
+<!-------------------JavaScript for Toggle Menu------------------>
+<script>
+    let bgr  = document.querySelector("#hamburger");
+    let menu  = document.querySelector(".nav-links");
+    
+    bgr.addEventListener("click" , ()=>{
+        menu.classList.toggle("menu")
+        // let f=0;
+        // if(f==0){
+        //     menu.classList.add("menu");
+        //     f = 1;
+        // }else{
+        //     menu.classList.remove("menu")
+        //     f=0;
+        // }
+    })
+</script>
+
+
+
+    <!----------Course---------->
+
+    
+
+
+
+
+   
+
+    <!-----------Footer------------>
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quas impedit accusantium facere deleniti nulla, <br>consectetur repudiandae incidunt, ratione consequatur doloremque ab accusamus.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-instagram"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by vivek</p>
+
+    </section>
+
+</body>
+
+</html>
